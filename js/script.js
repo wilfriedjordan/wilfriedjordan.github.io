@@ -40,11 +40,18 @@ const produits = await reponse.json()
     }
     update(produits)
     //Filtarage des elements
-    const sectionArticle = document.querySelector('.article')
+    //const sectionArticle = document.querySelector('.article')
     const All= document.querySelector('.btn1')
     All.addEventListener('click',(e)=>{
         e.currentTarget.parentElement.querySelector('.active').classList.remove('active');
         e.currentTarget.classList.add('active')
+        const sectionArticle = document.querySelector(".article__container")
+        sectionArticle.style.height = '147vh'
+        sectionArticle.style.display='grid'
+        sectionArticle.style.marginTop = "300px"
+        sectionArticle.style.gridTemplateColumns='repeat(3,1fr)'
+        sectionArticle.style.gridTemplateRows='repeat(3,33px)'
+        console.log(getComputedStyle(sectionArticle).display)
         document.querySelector(".article__container").innerHTML=""
         update(produits)
     })
@@ -72,6 +79,13 @@ const produits = await reponse.json()
         const articleFilter2 = produits.filter((produit)=>{
             return produit.category ==='pizza'
         })
+        const sectionArticle = document.querySelector(".article__container")
+        sectionArticle.style.height = '60vh'
+        sectionArticle.style.display='grid'
+        sectionArticle.style.marginTop = "300px"
+        sectionArticle.style.gridTemplateColumns='repeat(3,1fr)'
+        sectionArticle.style.gridTemplateRows='repeat(1,33px)'
+        console.log(getComputedStyle(sectionArticle).display)
         document.querySelector(".article__container").innerHTML=""
         update(articleFilter2)
     })
@@ -82,6 +96,13 @@ const produits = await reponse.json()
         const articleFilter3 = produits.filter((produit)=>{
             return produit.category ==='pasta'
         })
+        const sectionArticle = document.querySelector(".article__container")
+        sectionArticle.style.height = '60vh'
+        sectionArticle.style.display='grid'
+        sectionArticle.style.marginTop = "300px"
+        sectionArticle.style.gridTemplateColumns='repeat(2,2fr)'
+        sectionArticle.style.gridTemplateRows='repeat(1,33px)'
+        console.log(getComputedStyle(sectionArticle).display)
         document.querySelector(".article__container").innerHTML=""
         update(articleFilter3)
     })
@@ -92,7 +113,13 @@ const produits = await reponse.json()
         const articleFilter4 = produits.filter((produit)=>{
             return produit.category ==='fries'
         })
-        
+        const sectionArticle = document.querySelector(".article__container")
+        sectionArticle.style.height = '60vh'
+        sectionArticle.style.display='grid'
+        sectionArticle.style.marginTop = "300px"
+        sectionArticle.style.gridTemplateColumns='repeat(1,1fr)'
+        sectionArticle.style.gridTemplateRows='repeat(1,33px)'
+        console.log(getComputedStyle(sectionArticle).display)
         document.querySelector(".article__container").innerHTML=""
         update(articleFilter4)
     })

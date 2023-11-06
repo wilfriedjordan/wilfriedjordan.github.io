@@ -206,6 +206,109 @@ section.reduction{
 .reduction__container:hover img{
     transform: scale(1.1);
 }
+
+//Menu hamburger
+div.navigation{
+    display: none;
+}
+
+.navigationCheckbox{
+    display: none;
+}
+.navigationBg{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: relative;
+    top:1rem;
+    left: 10.6rem;
+    cursor: pointer;
+    z-index: 1000;
+    //background-image: radial-gradient(#c3073f , #950740);
+    //background-image: url('./../images/hero-bg.jpg');
+    transition: transform 0.2s cubic-bezier(0.86,0,1.07,1);
+    animation: rotate 0.2s ease;
+}
+@keyframes rotate{
+    50%{
+        transform: rotate(720deg);
+    }
+    100%{
+        transform: rotate(1440deg);
+    }
+}
+
+.navigationBtn{
+    background-color: #f3f3f3;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    top: 2.4rem;
+    left: 10.6rem;
+    border-radius: 50%;
+    z-index: 2000;
+    color: #ffff;
+    cursor: pointer;
+    box-shadow: 0rem 1rem 5rem rgba(0, 0, 0, 0.1);
+}
+.navigationIcon{
+    position: relative;
+    margin-top: 1rem;
+    width: 2rem;
+    height: 0.2rem;
+    background-color:white;
+    border-radius: 10px;
+    display:block;
+} 
+.navigationIcon::before,
+.navigationIcon::after{
+    width:100% ;
+    height: 0.2rem;
+    content: "";
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    background-color:white ;
+}
+
+.navigationIcon::before{
+    top: .7rem;
+}
+.navigationIcon::after{
+    top: -.6rem;
+}
+div.elemment{
+    display:block;
+}
+.nav{
+    height: 50vh;
+    text-align: center;
+    position: relative;
+    right: 5rem;
+    transform: translateY(-100%);
+    text-transform: uppercase;
+    z-index: 1500;
+    opacity: 0;
+    line-height: 2rem;
+    transition: all 2s cubic-bezier(0.68, -0.55, 0.265,1.55);
+}
+.navigationCheckbox:checked ~ .nav{
+    opacity: 1;
+    transform: translateY(15px);
+    width: 100%;
+}
+
+.navigationCheckbox:checked + .navigationBtn .navigationIcon{
+    background-color: transparent;
+}
+.navigationCheckbox:checked + .navigationBtn .navigationIcon::before{
+    transform: rotate(45deg);
+    top: 0;
+}
+.navigationCheckbox:checked + .navigationBtn .navigationIcon::after{
+    transform: rotate(-45deg);
+    top: 0;
+}
 /*____________________section articles___________________*/
 
 section.article{
@@ -711,6 +814,35 @@ section.footer{
             }
         }
     }
+    .article__nav{
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        top: 3rem;
+        
+        h2{
+            font-size: 2.7rem;
+            font-weight: 700;
+            position: relative;
+            top: 2rem;
+            font-family: "Dancing Script";    
+        }
+    }
+    section.reduction{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 23px;
+        height: 60vh;
+        color:$white;
+        position: relative;
+        top: 4rem;
+    }
+
 }
 @media screen and (max-width: 1024px){
     /* règles CSS à appliquer lorsque la largeur de l'écran est inférieure ou égale à 1024px */
@@ -854,6 +986,35 @@ section.footer{
             transition: all 0.2s ease-in-out;
         }
     }
+    .article__nav{
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        top: 3rem;
+        
+        h2{
+            font-size: 2.7rem;
+            font-weight: 700;
+            position: relative;
+            top: 2rem;
+            font-family: "Dancing Script";    
+        }
+    }
+    section.reduction{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 23px;
+        height: 60vh;
+        color:$white;
+        position: relative;
+        top: 4rem;
+    }
+
     .article__container__row{
         align-items: center;
         background-color: $black;
@@ -1154,8 +1315,61 @@ section.footer{
     }
 }
 
-@media  screen and (max-width: 843px){
+@media  screen and (max-width: 841px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
     header div.navi{
         display: none;
     }
+    div.navigation{
+        display: block;
+    }
+    h1.header__title{
+        position:relative;
+        bottom: 6rem;
+    }
+    header.header{
+        height: 150vh;
+    }
+    div.header__message{
+        width: 18rem;
+        h3{
+            font-size: 1.8rem;
+        }
+    }
+    section.footer{
+        height: 185vh;
+    }
+    .article__nav{
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        top: 3rem;
+        
+        h2{
+            font-size: 2.7rem;
+            font-weight: 700;
+            position: relative;
+            top: 2rem;
+            font-family: "Dancing Script";    
+        }
+    }
+    section.reduction{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 23px;
+        height: 60vh;
+        color:$white;
+        position: relative;
+        top: 4rem;
+    }
+
 }
