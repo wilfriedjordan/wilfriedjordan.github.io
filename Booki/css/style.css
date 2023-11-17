@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/**___________________  GENERAL _____________________**/
+*{
+    font-family:'Raleway', sans-serif;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/**____________Header ___________**/
+
+header{
+    margin: 70px 40px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul.list {
+    display: flex;
+    gap:50px ;
+    align-items: center;
+    font-size: 17px;
+    text-align: center;
+}
+header .navigation img{
+    width:115px ;
+}
+div.landing-page{
+    line-height:18px;
+}
+div.landing-page h3{
+    font-size: 25px;
+    font-weight: 1000;
+}
+div.landing-page p{
+    font-size: 18px;
+    font-weight: 700;
+}
+div.landing-page .text {
+    line-height: 25px;
+}
+form.formSeach{
+    display: flex;
+    align-items: center;
+}
+#form2{
+    display: none;
+}
+#searchInput{
+    padding: 10px ;
+    border: 1px solid #ccc;
+    outline: none;
+    font-weight: 1000;
+    color: black;
+    font-size: 18px;
+
+}
+#searchButton {
+    padding: 10px;
+    background-color: #0065FC;
+    color: #fff;
+    border: 1px solid #0065FC;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 18PX;
+    font-weight: 700;
+    outline: none;
+}
+.searchInput {
+    padding: 11px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-weight: 1000;
+    color: black;
+    font-size: 18px;
+
+}
+.searchButton{
+    display: none;
+}
+
+.seach{
+    padding: 10px;
+    padding-bottom: 14px;
+    background-color: #0065FC;
+    color: #fff;
+    border: 1px solid #0065FC;
+    border-radius:15px 15px 15px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    right: 17px;
+    font-weight: 700;
+    outline: none;
+}
+i#localisation {
+    padding:14.3px;
+    padding-bottom: 13.5px;
+    background-color: #F2F2F2;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    position: relative;
+    left: 5px;
+    border-right: none;
+}
+i.localisation {
+    padding: 12.5px;
+    background-color: #F2F2F2;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    position: relative;
+    left: 5px;
+    border-right: none;
+}
+.linkActive{
+    color: #0065FC;
+}
+.linkNav{
+    position: relative;
+    cursor: pointer;
+}
+.linkNav::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom:40px;
+    transform-origin: 0 100%;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+    background-color: #0065FC;
+}
+.linkNav:hover::before{
+    transform: scale(1);
+    transform-origin: 110px 0;
+}
+/**__________FILTRE_________**/
+
+div.filtre{
+    display:flex;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+}
+div.btn-filtre{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-weight: 700;
+    width: 190px;
+    justify-content: space-around;
+    border: 1.5px groove rgb(236, 229, 229);
+    border-radius: 50px;
+    transition: transform 1s ease-in ;
+}
+div.filtre h4{
+    font-size: 20px;
+}
+div.btn-filtre p.icons{
+    color: #0065FC;
+    border-radius: 50px;
+    background-color:#f1f1f1;
+    height: 100%;
+    width: 50px;
+    font-size:25px;
+    padding: 15px 0;
+    position: relative;
+    right: 10px;
+}
+div.btn-filtre p.icons1{
+    color: #0065FC;
+    border-radius: 50px;
+    background-color:#f1f1f1;
+    height: 100%;
+    width: 50px;
+    font-size:25px;
+    padding: 15px 0;
+    position: relative;
+    right: 16px;
+}
+div.btn-filtre p.icons2 {
+    color: #0065FC;
+    border-radius: 50px;
+    background-color: #f1f1f1;
+    height: 100%;
+    width: 50px;
+    font-size: 25px;
+    padding: 15px 0;
+    position: relative;
+    right: 9px;
+
+}
+div#btn-filtre5 {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 240px;
+    justify-content: space-around;
+    border: 1.5px groove rgb(236, 229, 229);
+    border-radius: 50px;
+}
+.btn-filtre button{
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    background-color:white;
+}
+.btn-filtre:hover{
+    background-color: #bfd6f7;
+    transform: scale(.8);
+}
+.btn-filtre:hover button {
+    background-color: #bfd6f7;
+}
+
+/****___________DIV INFO_______**/
+div.info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.info p.toultype{
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border: 1px solid rgb(227, 209, 209); 
+    border-radius: 50%;
+    color: #0065FC;
+    font-size: 19px;
+    font-weight: 900;
+}
+.landing-page .praInfo{
+    font-weight: 300;
+}
+
+/****________Section Hebergement__________*/
+
+section.hebergement{
+    margin: 30px 40px;
+    height: 120vh;
+    gap: 25px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+div.image img{
+    width: 100%;
+    height: 160px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 7px 7px;
+}
+div.row{
+    background-color: white;
+    border-radius: 20px;
+    height: 300px;
+    width: 290px;
+}
+div.text{
+    line-height: 8px;
+    padding: 0 20px;
+}
+div.text h4{
+    font-size: 18px;
+}
+div.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+div.contenair div.message {
+    position: relative;
+    right: 30%;
+}
+div.contenair{
+    display: flex;
+    padding-top: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    height: 130vh;
+}
+div.container1{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+div.container2 {
+    display: flex;
+    gap: 20px;
+}
+p.More{
+    font-size: 20px;
+    position: relative;
+    right: 38%;
+    padding: 18px 0;
+    font-weight: 700;
+}
+/**_____Left___*/
+div.rowRight{
+    background-color: white;
+    border-radius: 20px;
+    height: 180px;
+    width:380px;
+    display: flex;
+}
+div.rigth{
+    display: flex;
+    width: 430px;
+    height: 100%;
+    background-color:#F2F2F2;
+    padding: 5px 25px;
+    border-radius: 20px;
+
+}
+div.left{
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 1000px;
+
+}
+div.imageRigth img {
+    width: 180px;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    padding: 7px 7px;
+}
+div.rowRight h4{
+    font-size: 18px;
+}
+div.container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+div.textRight{
+    width: 200px;
+    line-height: 25px;
+    height: 100%;
+}
+div.container3 .message{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul.list_start{
+    display: flex;
+    padding: 0 5px;
+    color: #0065FC;
+}
+li.start4{
+    color: #F2F2F2;
+}
+/*****____________Section Activite_______***/
+
+section.Activite{
+    height: 91vh;
+    padding: 30px 45px;
+    border-radius: 20px;
+}
+section.Activite h2{
+    padding: 0 45px;
+}
+
+div.containt{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:20px ;
+
+}
+/**_____LeftBox______***/
+section.Activite div.leftbox{
+    display: flex;
+    width: 50%;
+    border-radius: 20px;
+    height: 100%;
+    gap: 25px;
+}
+div.leftbox div.row1{
+    width: 400px;
+    border-radius: 20px;
+    height: 65vh;
+    background-color: #F2F2F2;
+}
+div.row1 div.text{
+    font-size: 20px;
+    font-weight: 700;
+}
+div.row1 div.image1 img{
+    width: 100%;
+    height: 390px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 7px 7px;
+}
+
+div.leftbox div.row4{
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    width: 260px;
+    height: 200px;
+}
+div.leftbox div.row4 img{
+    height: 140px;
+}
+div.row2 div.row3{
+    border-radius: 20px;
+    width: 260px;
+    height: 218px;
+    background-color: #F2F2F2;
+}
+div.row2 div.row3 img{
+    height: 160px;
+}
+div.row4 div.text {
+    font-size: 20px;
+    font-weight: 700;
+}
+div.row3 div.text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/***_____RightBox________**/
+div.rigthbox div.row1 {
+    width: 400px;
+    height: 65vh;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+section.Activite div.rigthbox{
+    display: flex;
+    width: 50%;
+    border-radius: 20px;
+    height: 100%;
+    gap: 25px;
+}
+
+
+div.rigthbox .row1 div.text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+div.rigthbox div.row1 div.image1 img {
+    width: 100%;
+    height: 370px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 7px 7px;
+}
+
+div.rigthbox div.row4 {
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    width: 260px;
+    height: 205px;
+}
+
+div.rigthbox div.row4 img {
+    height: 120px;
+}
+div.rigthbox div.row3 img {
+    height: 150px;
+}
+div.rigthbox div.row2 div.row3 {
+    border-radius: 20px;
+    width: 260px;
+    height: 210px;
+    margin-top: 20px;
+    background-color: #F2F2F2;
+}
+
+div.rigthbox div.row4 div.text {
+    font-size: 17.5px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+div.rigthbox div.row3 div.text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/***_______footer_______**/
+
+footer{
+    background-color: #F2F2F2;
+}
+section.footer{
+    display: flex;
+    padding: 30px 45px;
+    gap: 20%;
+}
+section.footer h2.footer_title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/******_________Responsive____________***/
+
+
+
+@media screen and (max-width: 768px) {
+    /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 924px */
+    header {
+        margin: 70px 40px;
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    
+    .navbar ul.list {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    div.landing-page .text{
+        line-height: 30px;
+    }
+    #form1{
+        display: none;
+    }
+    #form2{
+        display: block;
+    }
+    .linkNav::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: 46.2px;
+        transform-origin: 0 100%;
+        transform: scale(0);
+        transition: transform 0.2s ease-in-out;
+        background-color: #0065FC;
+    }
+    nav.navbar ul.list{
+        position: relative;
+    }
+    nav.navbar ul.list::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: #F2F2F2;
+        top: 46.2px;
+    }
+
+    /**_______FILTRE_______*/
+
+    div.filtre {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    div.filter div.filter1{
+        position: absolute;
+        bottom: 2474px;
+    }
+    /**__________section hebergement_______**/
+
+    section.hebergement {
+        margin: 30px 40px;
+        height: 135vh;
+        gap: 25px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    
+    div.contenair {
+        display: flex;
+        padding-top: 20px;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        height: 170vh;
+    }
+    div.container1{
+        flex-direction: column;
+    }
+    div.container2 {
+        flex-direction: column;
+    }
+    section.hebergement div.left {
+        background-color:blue;
+        position: relative;
+        top: 200%; 
+        height:200vh ;
+    }
+    section.Activite{
+        height: 560vh;
+
+    }
+
+    /*______Right______*/
+
+        div.rowRight {
+            background-color: white;
+            border-radius: 20px;
+            height: 180px;
+            width: 400px;
+            display: flex;
+        }
+        section.hebergement div.rigth {
+            background-color: red;
+            position: relative;
+            top: 145%;
+        }
+        div.rigth {
+            display: flex;
+            width: 480px;
+            height: 100%;
+            justify-content: center;
+            background-color: #F2F2F2;
+            padding: 5px 25px;
+            border-radius: 20px;
+    
+        }
+    
+        div.imageRigth img {
+            width: 180px;
+            height: 100%;
+            border-radius: 20px 0px 0px 20px;
+            padding: 7px 7px;
+        }
+    
+        div.rowRight h4 {
+            font-size: 18px;
+        }
+    
+        div.container3 {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+    
+        div.textRight {
+            width: 200px;
+            line-height: 25px;
+            height: 100%;
+        }
+    
+        div.container3 .message {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+}
