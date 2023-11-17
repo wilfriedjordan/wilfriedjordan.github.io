@@ -313,7 +313,7 @@ p.More{
     padding: 18px 0;
     font-weight: 700;
 }
-/**_____Left___*/
+/**_____Right___*/
 div.rowRight{
     background-color: white;
     border-radius: 20px;
@@ -679,4 +679,168 @@ section.footer h2.footer_title{
             align-items: center;
             justify-content: space-between;
         }
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 924px */
+/**__________FILTRE_________**/
+
+    div.filtre {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding: 25px;
+        align-items: center;
+        text-align: center;
+        gap: 18px;
+    }
+
+    div.btn-filtre {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        font-weight: 600;
+        width: 180px;
+        justify-content: space-around;
+        border: 1.5px groove rgb(236, 229, 229);
+        border-radius: 50px;
+        transition: transform 1s ease-in;
+    }
+
+    div.filtre h4 {
+        font-size: 15px;
+    }
+
+    div.btn-filtre p.icons {
+        color: #0065FC;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        height: 100%;
+        clip-path: circle();
+        font-size: 20px;
+        padding: 15px 0;
+        position: relative;
+        right: 7px;
+    }
+
+    div.btn-filtre p.icons1 {
+        color: #0065FC;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        height: 100%;
+        clip-path: circle();
+        font-size: 20px;
+        padding: 15px 0;
+        position: relative;
+        right: 16px;
+    }
+
+    div.btn-filtre p.icons2 {
+        color: #0065FC;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        height: 100%;
+        clip-path: circle();
+        font-size: 20px;
+        padding: 15px 0;
+        position: relative;
+        right: 19px;
+
+    }
+
+    div#btn-filtre5 {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 290px;
+        justify-content: space-around;
+        border: 1.5px groove rgb(236, 229, 229);
+        border-radius: 50px;
+    }
+
+    .btn-filtre button {
+        border: none;
+        font-weight: 700;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    .btn-filtre:hover {
+        background-color: #bfd6f7;
+        transform: scale(.8);
+    }
+
+    .btn-filtre:hover button {
+        background-color: #bfd6f7;
+    }
+
+    /**hebergement*/
+
+    section.hebergement {
+        margin: 30px 40px;
+        height: 132vh;
+        gap: 25px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex: 1;
+        position: relative;
+        top: 120px;
+        flex-direction: column;
+    }
+
+    .hebergement div.left {
+        height: 100%;
+        background-color: #F2F2F2;
+        border-radius: 20px; 
+        width:800px ;
+    }
+    .hebergement div.rigth {
+        height: 760px;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+    }
+
+    .hebergement div.row {
+        background-color: white;
+        border-radius: 20px;
+        height: 300px;
+        width: 230px;
+        flex: 1;
+    }
+
+
+    /*____Section Activiter_____*/
+
+    section.Activite {
+        height: 30vh;
+        background-color: #0065FC;
+        position: relative;
+        top: 900px;
+    }
+
+    .Activite div.containt{
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+    footer .footer{
+        height: 30vh;
+        position: relative;
+        top: 5010px;
+    }
+
+
+
 }
