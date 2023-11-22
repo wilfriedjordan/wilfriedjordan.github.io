@@ -5,11 +5,16 @@
     box-sizing: border-box;
     flex-shrink: 0;
 }
+main{
+    flex: 1 0 auto;
+}
 
 body{
     padding: 0;
     margin: 0;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
 }
 li{
     list-style: none;
@@ -21,7 +26,7 @@ a{
 /**____________Header ___________**/
 
 header{
-    margin: 70px 40px;
+    margin: 70px 50px;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -155,7 +160,7 @@ i.localisation {
 
 div.filtre{
     display:flex;
-    padding: 25px;
+    padding: 25px 2px   ;
     align-items: center;
     text-align: center;
     gap: 35px;
@@ -236,7 +241,7 @@ div#btn-filtre5 {
 div.info{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
 }
 .info p.toultype{
     height: 25px;
@@ -250,266 +255,331 @@ div.info{
 }
 .landing-page .praInfo{
     font-weight: 300;
+    width: 100%;
 }
 
 /****________Section Hebergement__________*/
 
 section.hebergement{
-    margin: 30px 40px;
-    height: 120vh;
-    gap: 25px;
-    border-radius: 20px;
+    height: 110vh;
+    margin: 20px 4px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
 }
-div.image img{
+/***_______Left Section________****/
+div.hebergementLeft{
+    height: 105vh;
+    min-width:60%;
+    background-color: #F2F2F2;
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+div.row1{
+    display: flex;
+    gap: 20px;
     width: 100%;
-    height: 160px;
-    border-radius: 20px 20px 0px 0px;
-    padding: 7px 7px;
+    flex-wrap: wrap;
 }
-div.row{
-    background-color: white;
+div.hebergementContainer{
+    display: flex;
+    
+    flex-direction: column;
+}
+div.row-image{
+    background-color:white;
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
     border-radius: 20px;
     height: 300px;
-    width: 290px;
+    padding: 6px;
 }
-div.text{
-    line-height: 8px;
-    padding: 0 20px;
-}
-div.text h4{
-    font-size: 18px;
-}
-div.text span{
-    font-size: 20px;
-    font-weight: 700;
-}
-div.contenair div.message {
-    position: relative;
-    right: 30%;
-}
-div.contenair{
-    display: flex;
-    padding-top: 20px;
-    border-radius: 20px;
-    flex-direction: column;
-    align-items: center;
-    height: 130vh;
-}
-div.container1{
-    display: flex;
-    gap: 20px;
-    padding-bottom: 30px;
-}
-div.container2 {
-    display: flex;
-    gap: 20px;
-}
-p.More{
-    font-size: 20px;
-    position: relative;
-    right: 38%;
-    padding: 18px 0;
-    font-weight: 700;
-}
-/**_____Right___*/
-div.rowRight{
-    background-color: white;
-    border-radius: 20px;
-    height: 180px;
-    width:380px;
-    display: flex;
-}
-div.rigth{
-    display: flex;
-    width: 430px;
-    height: 100%;
-    background-color:#F2F2F2;
-    padding: 5px 25px;
-    border-radius: 20px;
-
-}
-div.left{
-    height: 100%;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    width: 1000px;
-
-}
-div.imageRigth img {
-    width: 180px;
-    height: 100%;
-    border-radius: 20px 0px 0px 20px;
-    padding: 7px 7px;
-}
-div.rowRight h4{
-    font-size: 18px;
-}
-div.container3 {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-div.textRight{
-    width: 200px;
-    line-height: 25px;
-    height: 100%;
-}
-div.container3 .message{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-ul.list_start{
-    display: flex;
-    padding: 0 5px;
-    color: #0065FC;
-}
-li.start4{
-    color: #F2F2F2;
-}
-/*****____________Section Activite_______***/
-
-section.Activite{
-    height: 91vh;
-    padding: 30px 45px;
-    border-radius: 20px;
-}
-section.Activite h2{
-    padding: 0 45px;
-}
-
-div.containt{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius:20px ;
-
-}
-/**_____LeftBox______***/
-section.Activite div.leftbox{
-    display: flex;
-    width: 50%;
-    border-radius: 20px;
-    height: 100%;
-    gap: 25px;
-}
-div.leftbox div.row1{
-    width: 400px;
-    border-radius: 20px;
-    height: 65vh;
-    background-color: #F2F2F2;
-}
-div.row1 div.text{
-    font-size: 20px;
-    font-weight: 700;
-}
-div.row1 div.image1 img{
+.hebergement-image{
     width: 100%;
-    height: 390px;
-    border-radius: 20px 20px 0px 0px;
-    padding: 7px 7px;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
 }
 
-div.leftbox div.row4{
-    border-radius: 20px;
+.hebergementContainer .locale1 {
+    background-image: url("./../images/hebergement/1.jpg");
+}
+.hebergementContainer .locale2 {
+    background-image: url("./../images/hebergement/2.jpg");
+}
+
+.hebergementContainer .locale3 {
+    background-image: url("./../images/hebergement/3.jpg");
+}
+
+.hebergementContainer .locale4 {
+    background-image: url("./../images/hebergement/4.jpg");
+}
+
+.hebergementContainer .locale5 {
+    background-image: url("./../images/hebergement/5.jpg");
+}
+
+.hebergementContainer .locale6 {
+    background-image: url("./../images/hebergement/6.jpg");
+}
+
+div.image-details {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    padding: 0 14px;
+    line-height:16px;
+}
+div.image-details h3{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+div.image-details p{
+    font-size: 14px;
+}
+
+ul.list-start {
+    display: flex;
+    color: #0065FC;
+    font-size: 11px;
+    padding: .14px;
+}
+div.section-more{
+    font-weight: 700;
+    font-size: 17px;
+}
+i.starwhite{
+    color:#F2F2F2;
+}   
+/****________section Right_______***/
+
+div.hebergementRight{
+    height: 105vh;
     background-color: #F2F2F2;
-    margin-top: 20px;
-    width: 260px;
+    padding: 15px 30px;
+    width: 480px;
+    border-radius: 20px;
+}
+.hebergementRight .section-title{
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+}
+
+div.row-container {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.rowImage{
+    display: flex;
+    width: 380px;
+    position: relative;
+    background-color: white;
+    padding: 6px;
+    border-radius: 20px;
     height: 200px;
 }
-div.leftbox div.row4 img{
-    height: 140px;
-}
-div.row2 div.row3{
-    border-radius: 20px;
-    width: 260px;
-    height: 218px;
-    background-color: #F2F2F2;
-}
-div.row2 div.row3 img{
-    height: 160px;
-}
-div.row4 div.text {
-    font-size: 20px;
-    font-weight: 700;
-}
-div.row3 div.text {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-/***_____RightBox________**/
-div.rigthbox div.row1 {
-    width: 400px;
-    height: 65vh;
-    border-radius: 20px;
-    background-color: #F2F2F2;
-}
-
-section.Activite div.rigthbox{
-    display: flex;
-    width: 50%;
-    border-radius: 20px;
+.hebergement-imageRight{
     height: 100%;
-    gap: 25px;
-}
-
-
-div.rigthbox .row1 div.text {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-div.rigthbox div.row1 div.image1 img {
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
     width: 100%;
-    height: 370px;
-    border-radius: 20px 20px 0px 0px;
-    padding: 7px 7px;
+}
+.rowImage .locale7 {
+    background-image: url("./../images/hebergement/7.jpg");
 }
 
-div.rigthbox div.row4 {
-    border-radius: 20px;
-    background-color: #F2F2F2;
-    width: 260px;
-    height: 205px;
+.rowImage .locale8 {
+    background-image: url("./../images/hebergement/8.jpg");
 }
 
-div.rigthbox div.row4 img {
-    height: 120px;
-}
-div.rigthbox div.row3 img {
-    height: 150px;
-}
-div.rigthbox div.row2 div.row3 {
-    border-radius: 20px;
-    width: 260px;
-    height: 210px;
-    margin-top: 20px;
-    background-color: #F2F2F2;
+.rowImage .locale9 {
+    background-image: url("./../images/hebergement/9.jpg");
 }
 
-div.rigthbox div.row4 div.text {
-    font-size: 17.5px;
-    line-height: 25px;
+div.imageDetails {  
+    position: absolute;
+    height: 94%;
+    background-color:white;
+    width:200px ;
+    right: 0;
+    padding: 14px 14px;
+    border-radius: 0px 25px 25px 0px ;
+
+    line-height:16px;
+}
+div.imageDetails h3{
+    font-size: 16px;
+}
+div.imageDetails p{
+    font-size: 14px;
+}
+ul.listRight{
+    line-height: 110px;
+}
+p.image-price span{
     font-weight: 700;
 }
+/**_________Section activites__________**/
 
-div.rigthbox div.row3 div.text {
-    font-size: 20px;
-    font-weight: 700;
+section.activites{
+    height: 65vh;
+    margin: 50px 0
+}
+div.activites__container{
+    width: 100%;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+/**_______leftbox______***/
+div.leftbox{
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+div.activites__row1{
+    display: flex;
+    height: 100%;
+    min-width: 300px;
+}
+.activites-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 2400px;
+    flex: 1;
+    height: 100%;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+}
+
+div.activites__row2{
+    height: 100%;
+    width: 280px;
+}
+
+div.activites__row2 .activites__row3{
+    display: flex;
+    height:55%;
+    width: 100%;
+}
+div.activites__row2 .activites__row4{
+    display: flex;
+    height:45%;
+    padding-top: 20px;
+    width: 100%;
+}
+.leftbox .locale10 {
+    background-image: url("../images/activite/1.jpg");
+}
+.leftbox .locale11 {
+    background-image: url("../images/activite/2.jpg");
+}
+.leftbox .locale12 {
+    background-image: url("../images/activite/3.jpg");
+}
+
+/****_______rightbox______***/
+
+
+div.rightbox{
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+
+}
+.activites-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    flex: 1;
+    height: 100%;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+}
+
+div.rightbox .activites__row3{
+    display: flex;
+    width: 100%;
+    height:45%;
+    padding-bottom: 20px;
+}
+div.rightbox .activites__row4{
+    display: flex;
+    height:55%;
+    width: 100%;
+}
+.rightbox .locale13 {
+    background-image: url("../images/activite/4.jpg");
+}
+.rightbox .locale14 {
+    background-image: url("../images/activite/5.jpg");
+}
+.rightbox .locale15 {
+    background-image: url("../images/activite/6.jpg");
+}
+
+
+
+.activites div.section__title{
+    margin: 0 70px;
+    text-transform: capitalize  ;
+}
+
+.activites-image .details {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #F2F2F2;
+    width: 100%;
+    font-size: 13px;
+    height: 50px;
+    padding: 0 15px;
+    line-height: 16px;
+    text-transform: capitalize;
+}
+.activites-image .details p {
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: capitalize;
 }
 
 /***_______footer_______**/
 
 footer{
+    width: 100%;
     background-color: #F2F2F2;
+    flex-shrink: 0;
 }
 section.footer{
     display: flex;
     padding: 30px 45px;
     gap: 20%;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
 }
 section.footer h2.footer_title{
     font-weight: bold;
@@ -518,16 +588,19 @@ section.footer h2.footer_title{
 
 
 
+
+
+
 /******_________Responsive____________***/
 
 
 
-@media screen and (max-width: 768px) {
-    /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 924px */
+@media  screen and (min-width: 573px) and (max-width:768px) {
+    /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 568px et inferieure a 768px */
     header {
-        margin: 70px 40px;
-        height: 110vh;
+        margin: 70px 30px;
         display: flex;
+        min-height: 65vh;
         flex-direction: column;
     }
     .navigation {
@@ -590,109 +663,488 @@ section.footer h2.footer_title{
         position: absolute;
         bottom: 2474px;
     }
-    /**__________section hebergement_______**/
 
-    section.hebergement {
-        margin: 30px 40px;
-        height: 135vh;
-        gap: 25px;
+
+    /****________Section Hebergement__________*/
+
+section.hebergement{
+    min-height:410vh;
+    display: flex;
+    margin: 10px 0;
+    flex-direction: column-reverse;
+}
+/***_______Left Section________****/
+div.hebergementLeft{
+    min-height: 290vh;
+    padding: 15px 15px;
+    width: 100%;
+    border-radius: 20px;
+}
+div.row1{
+    display: flex;
+    height:130vh;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+div.hebergementContainer{
+    padding: 30px 0;
+    gap: 15px;
+    display: flex; 
+    flex-direction: column;
+}
+div.row-image{
+    background-color:white;
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 100%;
+    max-height: 310px;
+    border-radius: 20px;
+    padding: 6px;
+}
+.hebergement-image{
+    min-width: 160px;
+    max-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+    /****________section Right_______***/
+
+    div.hebergementRight{
+        margin-top: 40px;
+        max-height: 155vh;
+        background-color: #F2F2F2;
         border-radius: 20px;
-        display: flex;
-        flex-wrap: wrap-reverse;
+        padding: 15px 0;
+        min-width: 100%;
     }
-    
-    div.contenair {
+
+    div.row-container {
+        max-height: 100%;
+        display:flex;
+        gap: 15px;
+        max-width: 100%;
+        padding: 10px 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .hebergementRight .section-title{
         display: flex;
-        padding-top: 20px;
+        align-items: center;
+        padding-bottom: 5px;
+        justify-content: space-evenly;
+    }
+
+    .rowImage{
+        display: flex;
+        position: relative;
+        background-color: white;
+        min-width: 60%;
+        padding: 6px;
         border-radius: 20px;
+        min-height: 180px;
+    }
+    .hebergement-imageRight{
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        min-width: 200px;
+    }
+    div.imageDetails {  
+        position: absolute;
+        height: 94%;
+        background-color:white;
+        max-width:220px;
+        right: 0;
+        padding: 14px 14px;
+        border-radius: 0px 25px 25px 0px ;
+
+        line-height:23px;
+    }
+
+    div.imageDetails h3{
+        font-size: 16px;
+    }
+    div.imageDetails p{
+        font-size: 14px;
+    }
+    ul.listRight{
+        line-height: 12px;
+    }
+
+        /**_________Section activites__________**/
+
+    .activites div.section__title{
+        margin: 0 15px;
+        text-transform: capitalize  ;
+    }
+    section.activites{
+        min-height: 270vh;
+        margin: 3px 0;
+    }
+    div.activites__container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    div.leftbox{
+        display: block;
+        flex-wrap: wrap;
+        padding: 10px;
+        height: 120vh;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    div.activites__row1{
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 100%;
+        max-height: 300px;
+
+    }
+    .activites-image{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex: 1;
+        min-width: 40px;
+        max-height: 100%;
+        position: relative;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    div.rightbox{
+        height: 120vh;
+        display: block;
+        padding: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+    .activites__row3{
+        max-height: 500px;
+    }
+
+
+    div.activites__row2{
+        max-height: 500px;
+        min-width:100%;
+        padding-top: 20px;
+    }
+
+    div.rightbox .activites__row3{
+        display: flex;
+        width: 100%;
+        min-height:60%;
+        padding-bottom: 20px;
+    }
+    div.rightbox .activites__row4{
+        display: flex;
+        min-height:60%;
+        width: 100%;
+    }
+
+    div.leftbox .activites__row4{
+        display: flex;
+        min-height:60%;
+        width: 100%;
+    }
+
+}
+
+@media  screen and (max-width: 573px) {
+    /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 924px */
+
+    header {
+        margin: 70px 30px;
+        display: flex;
+        min-height: 65vh;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .navigation {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        height: 170vh;
+        text-align: center;
+        justify-content: space-between;
     }
-    div.container1{
-        flex-direction: column;
+    
+    .navbar ul.list {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        font-size: 17px;
+        text-align: center;
     }
-    div.container2 {
-        flex-direction: column;
+
+    div.landing-page .text{
+        line-height: 30px;
     }
-    section.hebergement div.left {
-        background-color:blue;
+    #form1{
+        display: none;
+    }
+    #form2{
+        display: block;
+    }
+    .linkNav::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: 46.2px;
+        transform-origin: 0 100%;
+        transform: scale(0);
+        transition: transform 0.2s ease-in-out;
+        background-color: #0065FC;
+    }
+    nav.navbar ul.list{
         position: relative;
-        top: 200%; 
-        height:200vh ;
     }
-    section.Activite{
-        height: 560vh;
-
+    nav.navbar ul.list::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: #F2F2F2;
+        top: 46.2px;
     }
 
-    /*______Right______*/
+    /**_______FILTRE_______*/
 
-        div.rowRight {
-            background-color: white;
-            border-radius: 20px;
-            height: 180px;
-            width: 400px;
-            display: flex;
-        }
-        section.hebergement div.rigth {
-            background-color: red;
-            position: relative;
-            top: 145%;
-        }
-        div.rigth {
-            display: flex;
-            width: 480px;
-            height: 100%;
-            justify-content: center;
-            background-color: #F2F2F2;
-            padding: 5px 25px;
-            border-radius: 20px;
-    
-        }
-    
-        div.imageRigth img {
-            width: 180px;
-            height: 100%;
-            border-radius: 20px 0px 0px 20px;
-            padding: 7px 7px;
-        }
-    
-        div.rowRight h4 {
-            font-size: 18px;
-        }
-    
-        div.container3 {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-    
-        div.textRight {
-            width: 200px;
-            line-height: 25px;
-            height: 100%;
-        }
-    
-        div.container3 .message {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+    div.filtre {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    div.filter div.filter1{
+        position: absolute;
+        bottom: 2474px;
+    }
+        /****________Section Hebergement__________*/
+
+section.hebergement{
+    min-height:500vh;
+    display: flex;
+    margin: 10px 0;
+    flex-direction: column-reverse;
+}
+/***_______Left Section________****/
+div.hebergementLeft{
+    min-height: 290vh;
+    padding: 15px 15px;
+    width: 100%;
+    border-radius: 20px;
+}
+div.row1{
+    display: flex;
+    height:130vh;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+div.hebergementContainer{
+    padding: 30px 0;
+    gap: 15px;
+    display: flex; 
+    flex-direction: column;
+}
+div.row-image{
+    background-color:white;
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 100%;
+    max-height: 310px;
+    border-radius: 20px;
+    padding: 6px;
+}
+.hebergement-image{
+    min-width: 160px;
+    max-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+    /****________section Right_______***/
+
+    div.hebergementRight{
+        max-height: 180vh;
+        margin-top: 30px;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        padding: 15px 0;
+        min-width: 100%;
+    }
+
+    div.row-container {
+        max-height: 100%;
+        display:flex;
+        gap: 15px;
+        max-width: 90%;
+        padding: 10px 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .hebergementRight .section-title{
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px;
+        justify-content: space-evenly;
+    }
+
+    .rowImage{
+        display: flex;
+        position: relative;
+        background-color: white;
+        min-width: 10%;
+        padding: 6px;
+        border-radius: 20px;
+        min-height: 180px;
+    }
+    .hebergement-imageRight{
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        min-width: 100px;
+    }
+    div.imageDetails {  
+        position: absolute;
+        height: 94%;
+        background-color:white;
+        max-width:300px;
+        right: 0;
+        padding: 14px 14px;
+        border-radius: 0px 25px 25px 0px ;
+
+        line-height:23px;
+    }
+
+    div.imageDetails h3{
+        font-size: 16px;
+    }
+    div.imageDetails p{
+        font-size: 14px;
+    }
+    ul.listRight{
+        line-height: 12px;
+    }
+
+        /**_________Section activites__________**/
+
+    .activites div.section__title{
+        margin: 0 15px;
+        text-transform: capitalize  ;
+    }
+    section.activites{
+        min-height: 400vh;
+        margin: 3px 0;
+    }
+    div.activites__container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    div.leftbox{
+        display: block;
+        flex-wrap: wrap;
+        padding: 10px;
+        height: 120vh;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    div.activites__row1{
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 100%;
+        max-height: 300px;
+
+    }
+    .activites-image{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex: 1;
+        min-width: 40px;
+        max-height: 100%;
+        position: relative;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    div.rightbox{
+        height: 120vh;
+        display: block;
+        padding: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+    .activites__row3{
+        max-height: 500px;
+    }
+
+
+    div.activites__row2{
+        max-height: 500px;
+        min-width:100%;
+        padding-top: 20px;
+    }
+
+    div.rightbox .activites__row3{
+        display: flex;
+        width: 100%;
+        min-height:60%;
+        padding-bottom: 20px;
+    }
+    div.rightbox .activites__row4{
+        display: flex;
+        min-height:60%;
+        width: 100%;
+    }
+
+    div.leftbox .activites__row4{
+        display: flex;
+        min-height:60%;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 
 
 
-@media screen and (max-width:992px) {
+@media  screen and (min-width:992px) {
     /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 924px */
 /**__________FILTRE_________**/
-
+    header{
+        min-height:360px;
+    }
     div.filtre {
         display: flex;
         flex-grow: 1;
         flex-wrap: wrap;
-        padding: 25px;
+        padding: 25px 0;
         align-items: center;
         text-align: center;
         gap: 18px;
@@ -711,7 +1163,7 @@ section.footer h2.footer_title{
     }
 
     div.filtre h4 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     div.btn-filtre p.icons {
@@ -719,7 +1171,7 @@ section.footer h2.footer_title{
         border-radius: 50px;
         background-color: #f1f1f1;
         height: 100%;
-        clip-path: circle();
+        clip-path:circle(50%);
         font-size: 20px;
         padding: 15px 0;
         position: relative;
@@ -731,7 +1183,7 @@ section.footer h2.footer_title{
         border-radius: 50px;
         background-color: #f1f1f1;
         height: 100%;
-        clip-path: circle();
+        clip-path: circle(50%);
         font-size: 20px;
         padding: 15px 0;
         position: relative;
@@ -743,7 +1195,7 @@ section.footer h2.footer_title{
         border-radius: 50px;
         background-color: #f1f1f1;
         height: 100%;
-        clip-path: circle();
+        clip-path: circle(50%);
         font-size: 20px;
         padding: 15px 0;
         position: relative;
@@ -778,69 +1230,483 @@ section.footer h2.footer_title{
         background-color: #bfd6f7;
     }
 
-    /**hebergement*/
 
-    section.hebergement {
-        margin: 30px 40px;
-        height: 132vh;
-        gap: 25px;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        flex: 1;
-        position: relative;
-        top: 120px;
-        flex-direction: column;
-    }
+/****________Section Hebergement__________*/
 
-    .hebergement div.left {
-        height: 100%;
-        background-color: #F2F2F2;
-        border-radius: 20px; 
-        width:800px ;
-    }
-    .hebergement div.rigth {
-        height: 760px;
-        background-color: #F2F2F2;
-        border-radius: 20px;
-    }
+section.hebergement{
+    min-height: 110vh;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+}
+/***_______Left Section________****/
+div.hebergementLeft{
+    max-height:100%;
+    background-color:#F2F2F2;
+    padding: 15px 15px;
+    border-radius: 20px;
+}
+div.row1{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+div.hebergementContainer{
+    padding: 30px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+div.row-image{
+    background-color:white;
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 100%;
+    max-height: 260px;
+    border-radius: 20px;
+    padding: 6px;
+}
+.hebergement-image{
+    min-width: 160px;
+    max-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
 
-    .hebergement div.row {
-        background-color: white;
-        border-radius: 20px;
-        height: 300px;
-        width: 230px;
-        flex: 1;
-    }
-
-
-    /*____Section Activiter_____*/
-
-    section.Activite {
-        height: 30vh;
-        background-color: #0065FC;
-        position: relative;
-        top: 900px;
-    }
-
-    .Activite div.containt{
-        flex-direction: column;
-    }
-
-
-
-
-
-
+div.section-more{
+    font-weight: 700;
+    padding-top: 4px;
+    font-size: 17px;
+}
 
 
+div.image-details {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    max-height:120px;
+    padding: 0 14px;
+    line-height:25px;
+}
+div.image-details h3{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+div.image-details p{
+    font-size: 14px;
+    line-height:2px;
+    position: relative;
+    bottom: 10px;
+}
+p.image-price span{
+    font-weight: 700;
+}
+ul.list-start {
+    display: flex;
+    color: #0065FC;
+    font-size: 11px;
+    padding: .14px;
+}
+div.section-more{
+    font-weight: 700;
+    padding-top: 45px;
+    font-size: 17px;
+}
+i.starwhite{
+    color:#F2F2F2;
+}
+ul.list1{
+    position: relative;
+    bottom: 13px;
+}
+/****________section Right_______***/
 
-    footer .footer{
-        height: 30vh;
-        position: relative;
-        top: 5010px;
-    }
+div.hebergementRight{
+    max-height: 110vh;
+    background-color: #F2F2F2;
+    padding: 15px 15px;
+    max-width: 35%;
+    border-radius: 20px;
+}
+.hebergementRight .section-title{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+}
 
+div.row-container {
+    max-height: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.rowImage{
+    display: flex;
+    position: relative;
+    background-color: white;
+    max-width: 100%;
+    padding: 6px;
+    border-radius: 20px;
+    max-height: 180px;
+}
+.hebergement-imageRight{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+}
+
+div.imageDetails {  
+    position: absolute;
+    height: 94%;
+    background-color:white;
+    max-width:160px;
+    right: 0;
+    padding: 14px 14px;
+    border-radius: 0px 25px 25px 0px ;
+
+    line-height:23px;
+}
+div.imageDetails h3{
+    font-size: 16px;
+}
+div.imageDetails p{
+    font-size: 14px;
+}
+ul.listRight{
+    line-height: 18px;
+}
+/**_________Section activites__________**/
+
+
+section.activites{
+    min-height: 140vh;
+    margin: 3px 0
+}
+div.activites__container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+div.leftbox{
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    min-width: 20%;
+    background-color: #0065FC;
+}
+
+.activites-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    min-width: 42px;
+    max-height: 100%;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+}
+
+div.rightbox{
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+div.activites__row2{
+    min-height: 400px;
+}
 
 
 }
+
+
+
+
+@media  screen and (min-width:768px) and (max-width:992px) {
+    /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 768px */
+/**__________FILTRE_________**/
+    header{
+        min-height:360px;
+    }
+    div.filtre {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        padding: 25px 0;
+        align-items: center;
+        text-align: center;
+        gap: 18px;
+    }
+
+    div.btn-filtre {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        font-weight: 600;
+        width: 180px;
+        justify-content: space-around;
+        border: 1.5px groove rgb(236, 229, 229);
+        border-radius: 50px;
+        transition: transform 1s ease-in;
+    }
+
+    div.filtre h4 {
+        font-size: 20px;
+    }
+
+    div.btn-filtre p.icons {
+        color: #0065FC;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        height: 100%;
+        clip-path:circle(50%);
+        font-size: 20px;
+        padding: 15px 0;
+        position: relative;
+        right: 7px;
+    }
+
+    div.btn-filtre p.icons1 {
+        color: #0065FC;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        height: 100%;
+        clip-path: circle(50%);
+        font-size: 20px;
+        padding: 15px 0;
+        position: relative;
+        right: 16px;
+    }
+
+    div.btn-filtre p.icons2 {
+        color: #0065FC;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        height: 100%;
+        clip-path: circle(50%);
+        font-size: 20px;
+        padding: 15px 0;
+        position: relative;
+        right: 19px;
+
+    }
+
+    div#btn-filtre5 {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 290px;
+        justify-content: space-around;
+        border: 1.5px groove rgb(236, 229, 229);
+        border-radius: 50px;
+    }
+
+    .btn-filtre button {
+        border: none;
+        font-weight: 700;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    .btn-filtre:hover {
+        background-color: #bfd6f7;
+        transform: scale(.8);
+    }
+
+    .btn-filtre:hover button {
+        background-color: #bfd6f7;
+    }
+
+    /****________Section Hebergement__________*/
+
+section.hebergement{
+    min-height: 230vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+/***_______Left Section________****/
+div.hebergementLeft{
+    max-height:100%;
+    padding: 15px 15px;
+    width: 100%;
+    border-radius: 20px;
+}
+div.row1{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+div.hebergementContainer{
+    padding: 30px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+div.row-image{
+    background-color:white;
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 100%;
+    max-height: 260px;
+    border-radius: 20px;
+    padding: 6px;
+}
+.hebergement-image{
+    min-width: 160px;
+    max-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+/****________section Right_______***/
+
+div.hebergementRight{
+    max-height: 155vh;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 15px 0;
+    width: 100%;
+}
+
+div.row-container {
+    max-height: 100%;
+    display:flex;
+    gap: 15px;
+    max-width: 100%;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hebergementRight .section-title{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    justify-content: space-evenly;
+}
+
+.rowImage{
+    display: flex;
+    position: relative;
+    background-color: white;
+    min-width: 60%;
+    padding: 6px;
+    border-radius: 20px;
+    min-height: 180px;
+}
+.hebergement-imageRight{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    min-width: 200px;
+}
+div.imageDetails {  
+    position: absolute;
+    height: 94%;
+    background-color:white;
+    max-width:220px;
+    right: 0;
+    padding: 14px 14px;
+    border-radius: 0px 25px 25px 0px ;
+
+    line-height:23px;
+}
+
+div.imageDetails h3{
+    font-size: 16px;
+}
+div.imageDetails p{
+    font-size: 14px;
+}
+ul.listRight{
+    line-height: 12px;
+}
+
+/**_________Section activites__________**/
+
+.activites div.section__title{
+    margin: 0 50px;
+    text-transform: capitalize  ;
+}
+section.activites{
+    min-height: 140vh;
+    margin: 3px 0
+}
+div.activites__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 35px;
+    justify-content: space-evenly;
+}
+div.leftbox{
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width:20% ;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+div.activites__row1{
+    justify-content: space-evenly;
+    min-width: 40%;
+
+}
+.activites-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    min-width: 40px;
+    max-height: 100%;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+}
+
+div.rightbox{
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 20%;
+    gap: .5px;
+    justify-content:space-evenly;
+}
+
+div.activites__row2{
+    min-height: 400px;
+    min-width: 35%;
+}
+section.footer{
+    display: flex;
+    padding: 30px 45px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+}
+
+
+
+
