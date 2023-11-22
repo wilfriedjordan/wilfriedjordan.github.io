@@ -878,7 +878,7 @@ div.row-image{
     
     .navbar ul.list {
         display: flex;
-        gap:8px;
+        gap:15px;
         align-items: center;
         font-size: 17px;
         text-align: center;
