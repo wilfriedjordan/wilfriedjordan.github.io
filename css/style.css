@@ -950,40 +950,12 @@ div.row-image{
         bottom: 2474px;
     }
     div.btn-filtre p.icons {
-        color: #0065FC;
-        border-radius: 50px;
-        background-color: #f1f1f1;
-        height: 100%;
-        clip-path: circle(50%);
-        font-size: 20px;
-        padding: 15px 0;
-        position: relative;
         right: 6px;
     }
 
-    div.btn-filtre p.icons1 {
-        color: #0065FC;
-        border-radius: 50px;
-        background-color: #f1f1f1;
-        height: 100%;
-        clip-path: circle(50%);
-        font-size: 20px;
-        padding: 15px 0;
-        position: relative;
-        right: 16px;
-    }
 
     div.btn-filtre p.icons2 {
-        color: #0065FC;
-        border-radius: 50px;
-        background-color: #f1f1f1;
-        height: 100%;
-        clip-path: circle(50%);
-        font-size: 20px;
-        padding: 15px 0;
-        position: relative;
         right: 18px;
-
     }
 
     div#btn-filtre5 {
@@ -1081,7 +1053,7 @@ div.row-image{
         display: flex;
         position: relative;
         background-color: white;
-        width: 100%;
+        min-width: 100%;
         padding: 6px;
         border-radius: 20px;
         min-height: 180px;
@@ -1097,7 +1069,7 @@ div.row-image{
         position: absolute;
         height: 94%;
         background-color:white;
-        max-width:300px;
+        max-width:200px;
         right: 0;
         padding: 14px 14px;
         border-radius: 0px 25px 25px 0px ;
