@@ -862,7 +862,7 @@ div.row-image{
     header {
         margin: 30px;
         display: flex;
-        min-height: 150vh;
+        min-height: 170vh;
         justify-content: center;
         flex-direction: column;
     }
