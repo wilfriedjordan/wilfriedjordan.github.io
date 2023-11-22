@@ -862,7 +862,7 @@ div.row-image{
     header {
         margin: 30px;
         display: flex;
-        min-height: 170vh;
+        min-height: 140vh;
         justify-content: center;
         flex-direction: column;
     }
@@ -887,13 +887,7 @@ div.row-image{
         line-height: 30px;
     }
 
-    div.landing-page{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left:20px ;
-    }
+
     #form1{
         display: none;
     }
