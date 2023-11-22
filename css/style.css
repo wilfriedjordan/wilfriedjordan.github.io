@@ -862,7 +862,7 @@ div.row-image{
     /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 924px */
 
     header {
-        margin: 70px 30px;
+        margin: 7px 30px;
         display: flex;
         min-height: 110vh;
         justify-content: center;
@@ -878,8 +878,9 @@ div.row-image{
     
     .navbar ul.list {
         display: flex;
-        gap:15px;
+        gap:20px;
         align-items: center;
+        padding: 0 5px;
         font-size: 17px;
         text-align: center;
     }
@@ -921,7 +922,7 @@ div.row-image{
         outline: none;
         font-weight: 1000;
         color: black;
-        width: 180px;
+        width: 200px;
         font-size: 15px;
     }
     i#localisation {
@@ -951,14 +952,13 @@ div.row-image{
         /****________Section Hebergement__________*/
 
 section.hebergement{
-    min-height:500vh;
+    min-height:419vh;
     display: flex;
-    margin: 10px 0;
     flex-direction: column-reverse;
 }
 /***_______Left Section________****/
 div.hebergementLeft{
-    min-height: 290vh;
+    min-height:290vh;
     padding: 15px 15px;
     width: 100%;
     border-radius: 20px;
@@ -999,19 +999,19 @@ div.row-image{
     /****________section Right_______***/
 
     div.hebergementRight{
-        max-height: 300vh;
+        min-height: 113vh;
         margin-top: 30px;
         background-color: #F2F2F2;
         border-radius: 20px;
         padding: 15px 0;
-        min-width: 100%;
+        width: 100%;
     }
 
     div.row-container {
         max-height: 100%;
         display:flex;
         gap: 15px;
-        max-width: 90%;
+        max-width: 95%;
         padding: 10px 20px;
         justify-content: space-evenly;
         align-items: center;
@@ -1027,7 +1027,7 @@ div.row-image{
         display: flex;
         position: relative;
         background-color: white;
-        min-width: 10%;
+        width: 100%;
         padding: 6px;
         border-radius: 20px;
         min-height: 180px;
@@ -1037,7 +1037,7 @@ div.row-image{
         background-position: center;
         background-size: cover;
         border-radius: 20px;
-        min-width: 100px;
+        min-width: 200px;
     }
     div.imageDetails {  
         position: absolute;
@@ -1068,7 +1068,7 @@ div.row-image{
         text-transform: capitalize  ;
     }
     section.activites{
-        min-height: 400vh;
+        min-height: 280vh;
         margin: 3px 0;
     }
     div.activites__container{
@@ -1088,7 +1088,7 @@ div.row-image{
     div.activites__row1{
         display: flex;
         justify-content: space-evenly;
-        max-width: 100%;
+        width: 100%;
         max-height: 300px;
 
     }
@@ -1118,7 +1118,7 @@ div.row-image{
 
     div.activites__row2{
         max-height: 500px;
-        min-width:100%;
+        width:100%;
         padding-top: 20px;
     }
 
@@ -1140,8 +1140,17 @@ div.row-image{
         width: 100%;
     }
 
-
-
+    footer{
+        width: 100%;
+    }
+    section.footer {
+        display: flex;
+        padding: 30px 45px;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
 
 
 
