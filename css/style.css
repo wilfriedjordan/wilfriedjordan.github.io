@@ -862,7 +862,7 @@ div.row-image{
     header {
         margin: 30px;
         display: flex;
-        min-height: 140vh;
+        min-height: 150vh;
         justify-content: center;
         flex-direction: column;
     }
@@ -961,12 +961,12 @@ div.row-image{
         bottom: 2474px;
     }
     div.btn-filtre p.icons {
-        right: 6px;
+        right: 8px;
     }
 
 
     div.btn-filtre p.icons2 {
-        right: 18px;
+        right: 11px;
     }
 
     div#btn-filtre5 {
@@ -983,7 +983,7 @@ div.row-image{
         border: none;
         font-weight: 700;
         color: black;
-        font-size: 14px;
+        font-size: 13px;
         cursor: pointer;
         background-color: white;
     }
