@@ -949,6 +949,60 @@ div.row-image{
         position: absolute;
         bottom: 2474px;
     }
+    div.btn-filtre p.icons {
+        color: #0065FC;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        height: 100%;
+        clip-path: circle(50%);
+        font-size: 20px;
+        padding: 15px 0;
+        position: relative;
+        right: 6px;
+    }
+
+    div.btn-filtre p.icons1 {
+        color: #0065FC;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        height: 100%;
+        clip-path: circle(50%);
+        font-size: 20px;
+        padding: 15px 0;
+        position: relative;
+        right: 16px;
+    }
+
+    div.btn-filtre p.icons2 {
+        color: #0065FC;
+        border-radius: 50px;
+        background-color: #f1f1f1;
+        height: 100%;
+        clip-path: circle(50%);
+        font-size: 20px;
+        padding: 15px 0;
+        position: relative;
+        right: 18px;
+
+    }
+
+    div#btn-filtre5 {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 290px;
+        justify-content: space-around;
+        border: 1.5px groove rgb(236, 229, 229);
+        border-radius: 50px;
+    }
+
+    .btn-filtre button {
+        border: none;
+        font-weight: 700;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: white;
+    }
         /****________Section Hebergement__________*/
 
 section.hebergement{
