@@ -617,7 +617,6 @@ section.footer h2.footer_title{
         font-size: 17px;
         text-align: center;
     }
-
     div.landing-page .text{
         line-height: 30px;
     }
@@ -855,7 +854,6 @@ div.row-image{
         min-height:60%;
         width: 100%;
     }
-
 }
 
 @media  screen and (max-width: 573px) {
@@ -864,7 +862,7 @@ div.row-image{
     header {
         margin: 30px;
         display: flex;
-        min-height: 130vh;
+        min-height: 150vh;
         justify-content: center;
         flex-direction: column;
     }
@@ -887,6 +885,14 @@ div.row-image{
 
     div.landing-page .text{
         line-height: 30px;
+    }
+
+    div.landing-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left:20px ;
     }
     #form1{
         display: none;
@@ -927,7 +933,7 @@ div.row-image{
     }
     i#localisation {
         padding: 11px;
-        padding-bottom: 13px;
+        padding-bottom: 12.6px;
         background-color: #F2F2F2;
         border: 1px solid #ccc;
         border-radius: 10px 0 0 10px;
@@ -944,6 +950,17 @@ div.row-image{
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
+    }
+    div.btn-filtre {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        font-weight: 400;
+        width: 160px;
+        justify-content: space-around;
+        border: 1.5px groove rgb(236, 229, 229);
+        border-radius: 50px;
+        transition: transform 1s ease-in;
     }
     div.filter div.filter1{
         position: absolute;
@@ -962,7 +979,7 @@ div.row-image{
         display: flex;
         align-items: center;
         height: 50px;
-        width: 290px;
+        width: 220px;
         justify-content: space-around;
         border: 1.5px groove rgb(236, 229, 229);
         border-radius: 50px;
@@ -971,7 +988,7 @@ div.row-image{
     .btn-filtre button {
         border: none;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 14px;
         cursor: pointer;
         background-color: white;
     }
