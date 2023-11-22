@@ -93,7 +93,6 @@ form.formSeach{
     font-weight: 1000;
     color: black;
     font-size: 18px;
-
 }
 .searchButton{
     display: none;
@@ -916,6 +915,15 @@ div.row-image{
         background-color: #F2F2F2;
         top: 46.2px;
     }
+        .searchInput {
+            padding: 11px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-weight: 1000;
+            color: black;
+            width: 180px;
+            font-size: 18px;
+        }
 
     /**_______FILTRE_______*/
 
