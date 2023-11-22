@@ -862,7 +862,7 @@ div.row-image{
     /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 924px */
 
     header {
-        margin: 7px 30px;
+        margin: 30px;
         display: flex;
         min-height: 110vh;
         justify-content: center;
@@ -873,7 +873,7 @@ div.row-image{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        justify-content: space-between;
+        justify-content: center;
     }
     
     .navbar ul.list {
