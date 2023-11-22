@@ -592,280 +592,17 @@ section.footer h2.footer_title{
 
 /******_________Responsive____________***/
 
-
-
-@media  screen and (min-width: 573px) and (max-width:768px) {
-    /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 568px et inferieure a 768px */
-    header {
-        margin: 70px 30px;
-        display: flex;
-        min-height: 65vh;
-        flex-direction: column;
-    }
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-    }
-    
-    .navbar ul.list {
-        display: flex;
-        gap: 50px;
-        align-items: center;
-        font-size: 17px;
-        text-align: center;
-    }
-    div.landing-page .text{
-        line-height: 30px;
-    }
-    #form1{
-        display: none;
-    }
-    #form2{
-        display: block;
-    }
-    .linkNav::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 5px;
-        top: 46.2px;
-        transform-origin: 0 100%;
-        transform: scale(0);
-        transition: transform 0.2s ease-in-out;
-        background-color: #0065FC;
-    }
-    nav.navbar ul.list{
-        position: relative;
-    }
-    nav.navbar ul.list::before{
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 5px;
-        background-color: #F2F2F2;
-        top: 46.2px;
-    }
-
-    /**_______FILTRE_______*/
-
-    div.filtre {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-    }
-    div.filter div.filter1{
-        position: absolute;
-        bottom: 2474px;
-    }
-
-
-    /****________Section Hebergement__________*/
-
-section.hebergement{
-    min-height:410vh;
-    display: flex;
-    margin: 10px 0;
-    flex-direction: column-reverse;
-}
-/***_______Left Section________****/
-div.hebergementLeft{
-    min-height: 290vh;
-    padding: 15px 15px;
-    width: 100%;
-    border-radius: 20px;
-}
-div.row1{
-    display: flex;
-    height:130vh;
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-div.hebergementContainer{
-    padding: 30px 0;
-    gap: 15px;
-    display: flex; 
-    flex-direction: column;
-}
-div.row-image{
-    background-color:white;
-    flex: 1;
-    flex-wrap: wrap;
-    display: flex;
-    max-width: 100%;
-    max-height: 310px;
-    border-radius: 20px;
-    padding: 6px;
-}
-.hebergement-image{
-    min-width: 160px;
-    max-height: 100%;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-}
-
-
-    /****________section Right_______***/
-
-    div.hebergementRight{
-        margin-top: 40px;
-        max-height: 155vh;
-        background-color: #F2F2F2;
-        border-radius: 20px;
-        padding: 15px 0;
-        min-width: 100%;
-    }
-
-    div.row-container {
-        max-height: 100%;
-        display:flex;
-        gap: 15px;
-        max-width: 100%;
-        padding: 10px 20px;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .hebergementRight .section-title{
-        display: flex;
-        align-items: center;
-        padding-bottom: 5px;
-        justify-content: space-evenly;
-    }
-
-    .rowImage{
-        display: flex;
-        position: relative;
-        background-color: white;
-        min-width: 60%;
-        padding: 6px;
-        border-radius: 20px;
-        min-height: 180px;
-    }
-    .hebergement-imageRight{
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        border-radius: 20px;
-        min-width: 200px;
-    }
-    div.imageDetails {  
-        position: absolute;
-        height: 94%;
-        background-color:white;
-        max-width:220px;
-        right: 0;
-        padding: 14px 14px;
-        border-radius: 0px 25px 25px 0px ;
-
-        line-height:23px;
-    }
-
-    div.imageDetails h3{
-        font-size: 16px;
-    }
-    div.imageDetails p{
-        font-size: 14px;
-    }
-    ul.listRight{
-        line-height: 12px;
-    }
-
-        /**_________Section activites__________**/
-
-    .activites div.section__title{
-        margin: 0 15px;
-        text-transform: capitalize  ;
-    }
-    section.activites{
-        min-height: 270vh;
-        margin: 3px 0;
-    }
-    div.activites__container{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-    div.leftbox{
-        display: block;
-        flex-wrap: wrap;
-        padding: 10px;
-        height: 120vh;
-        flex-direction: column;
-        width: 100%;
-
-    }
-    div.activites__row1{
-        display: flex;
-        justify-content: space-evenly;
-        max-width: 100%;
-        max-height: 300px;
-
-    }
-    .activites-image{
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        flex: 1;
-        min-width: 40px;
-        max-height: 100%;
-        position: relative;
-        border-radius: 20px 20px 20px 20px;
-    }
-
-    div.rightbox{
-        height: 120vh;
-        display: block;
-        padding: 10px;
-        flex-wrap: wrap;
-        width: 100%;
-        flex-direction: column;
-    }
-    .activites__row3{
-        max-height: 500px;
-    }
-
-
-    div.activites__row2{
-        max-height: 500px;
-        min-width:100%;
-        padding-top: 20px;
-    }
-
-    div.rightbox .activites__row3{
-        display: flex;
-        width: 100%;
-        min-height:60%;
-        padding-bottom: 20px;
-    }
-    div.rightbox .activites__row4{
-        display: flex;
-        min-height:60%;
-        width: 100%;
-    }
-
-    div.leftbox .activites__row4{
-        display: flex;
-        min-height:60%;
-        width: 100%;
-    }
-}
-
-@media  screen and (max-width: 573px) {
+@media screen and (max-width: 768px) {
     /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 924px */
 
     header {
-        margin: 30px;
+        
         display: flex;
-        min-height: 150vh;
+        height: auto;
         justify-content: center;
         flex-direction: column;
     }
+
     .navigation {
         display: flex;
         flex-direction: column;
@@ -873,27 +610,29 @@ div.row-image{
         text-align: center;
         justify-content: center;
     }
-    
+
     .navbar ul.list {
         display: flex;
-        gap:20px;
+        gap: 20px;
         align-items: center;
         padding: 0 5px;
         font-size: 17px;
         text-align: center;
     }
 
-    div.landing-page .text{
+    div.landing-page .text {
         line-height: 30px;
     }
 
 
-    #form1{
+    #form1 {
         display: none;
     }
-    #form2{
+
+    #form2 {
         display: block;
     }
+
     .linkNav::before {
         content: "";
         position: absolute;
@@ -905,10 +644,12 @@ div.row-image{
         transition: transform 0.2s ease-in-out;
         background-color: #0065FC;
     }
-    nav.navbar ul.list{
+
+    nav.navbar ul.list {
         position: relative;
     }
-    nav.navbar ul.list::before{
+
+    nav.navbar ul.list::before {
         content: "";
         position: absolute;
         width: 100%;
@@ -916,6 +657,7 @@ div.row-image{
         background-color: #F2F2F2;
         top: 46.2px;
     }
+
     .searchInput {
         padding: 11px;
         border: 1px solid #ccc;
@@ -925,6 +667,7 @@ div.row-image{
         width: 200px;
         font-size: 15px;
     }
+
     i#localisation {
         padding: 11px;
         padding-bottom: 12.6px;
@@ -945,6 +688,7 @@ div.row-image{
         align-items: center;
         text-align: center;
     }
+
     div.btn-filtre {
         display: flex;
         align-items: center;
@@ -956,10 +700,12 @@ div.row-image{
         border-radius: 50px;
         transition: transform 1s ease-in;
     }
-    div.filter div.filter1{
+
+    div.filter div.filter1 {
         position: absolute;
         bottom: 2474px;
     }
+
     div.btn-filtre p.icons {
         right: 12px;
     }
@@ -978,8 +724,9 @@ div.row-image{
         border: 1.5px groove rgb(236, 229, 229);
         border-radius: 50px;
     }
+
     div#btn-filtre3,
-    div#btn-filtre1{
+    div#btn-filtre1 {
         width: 190px;
     }
 
@@ -991,56 +738,62 @@ div.row-image{
         cursor: pointer;
         background-color: white;
     }
-        /****________Section Hebergement__________*/
 
-section.hebergement{
-    min-height:419vh;
-    display: flex;
-    flex-direction: column-reverse;
-}
-/***_______Left Section________****/
-div.hebergementLeft{
-    min-height:290vh;
-    padding: 15px 15px;
-    width: 100%;
-    border-radius: 20px;
-}
-div.row1{
-    display: flex;
-    height:130vh;
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-div.hebergementContainer{
-    padding: 30px 0;
-    gap: 15px;
-    display: flex; 
-    flex-direction: column;
-}
-div.row-image{
-    background-color:white;
-    flex: 1;
-    flex-wrap: wrap;
-    display: flex;
-    max-width: 100%;
-    max-height: 310px;
-    border-radius: 20px;
-    padding: 6px;
-}
-.hebergement-image{
-    min-width: 160px;
-    max-height: 100%;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-}
+    /****________Section Hebergement__________*/
+
+    section.hebergement {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /***_______Left Section________****/
+    div.hebergementLeft {
+        min-height: 290vh;
+        padding: 15px 15px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    div.row1 {
+        display: flex;
+        height: 130vh;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    div.hebergementContainer {
+        padding: 30px 0;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.row-image {
+        background-color: white;
+        flex: 1;
+        flex-wrap: wrap;
+        display: flex;
+        max-width: 100%;
+        max-height: 310px;
+        border-radius: 20px;
+        padding: 6px;
+    }
+
+    .hebergement-image {
+        min-width: 160px;
+        max-height: 100%;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
 
 
     /****________section Right_______***/
 
-    div.hebergementRight{
+    div.hebergementRight {
         min-height: 113vh;
         margin-top: 30px;
         background-color: #F2F2F2;
@@ -1051,21 +804,22 @@ div.row-image{
 
     div.row-container {
         max-height: 100%;
-        display:flex;
+        display: flex;
         gap: 15px;
         max-width: 95%;
         padding: 10px 20px;
         justify-content: space-evenly;
         align-items: center;
     }
-    .hebergementRight .section-title{
+
+    .hebergementRight .section-title {
         display: flex;
         align-items: center;
         padding-bottom: 5px;
         justify-content: space-evenly;
     }
 
-    .rowImage{
+    .rowImage {
         display: flex;
         position: relative;
         background-color: white;
@@ -1074,51 +828,59 @@ div.row-image{
         border-radius: 20px;
         min-height: 180px;
     }
-    .hebergement-imageRight{
+
+    .hebergement-imageRight {
         height: 100%;
         background-position: center;
         background-size: cover;
         border-radius: 20px;
         min-width: 200px;
     }
-    div.imageDetails {  
+
+    div.imageDetails {
         position: absolute;
         height: 94%;
-        background-color:white;
-        max-width:200px;
+        background-color: white;
+        max-width: 200px;
         right: 0;
         padding: 14px 14px;
-        border-radius: 0px 25px 25px 0px ;
+        border-radius: 0px 25px 25px 0px;
 
-        line-height:23px;
+        line-height: 23px;
     }
 
-    div.imageDetails h3{
+    div.imageDetails h3 {
         font-size: 16px;
     }
-    div.imageDetails p{
+
+    div.imageDetails p {
         font-size: 14px;
     }
-    ul.listRight{
+
+    ul.listRight {
         line-height: 12px;
     }
 
-        /**_________Section activites__________**/
+    /**_________Section activites__________**/
 
-    .activites div.section__title{
+    .activites div.section__title {
         margin: 0 15px;
-        text-transform: capitalize  ;
+        text-transform: capitalize;
     }
-    section.activites{
-        min-height: 280vh;
+
+    section.activites {
+        /*min-height: 280vh;*/
+        height: auto;
         margin: 3px 0;
     }
-    div.activites__container{
+
+    div.activites__container {
         display: flex;
         flex-direction: column;
         gap: 25px;
     }
-    div.leftbox{
+
+    div.leftbox {
         display: block;
         flex-wrap: wrap;
         padding: 10px;
@@ -1127,14 +889,16 @@ div.row-image{
         width: 100%;
 
     }
-    div.activites__row1{
+
+    div.activites__row1 {
         display: flex;
         justify-content: space-evenly;
         width: 100%;
         max-height: 300px;
 
     }
-    .activites-image{
+
+    .activites-image {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1145,7 +909,7 @@ div.row-image{
         border-radius: 20px 20px 20px 20px;
     }
 
-    div.rightbox{
+    div.rightbox {
         height: 120vh;
         display: block;
         padding: 10px;
@@ -1153,38 +917,41 @@ div.row-image{
         width: 100%;
         flex-direction: column;
     }
-    .activites__row3{
+
+    .activites__row3 {
         max-height: 500px;
     }
 
 
-    div.activites__row2{
+    div.activites__row2 {
         max-height: 500px;
-        width:100%;
+        width: 100%;
         padding-top: 20px;
     }
 
-    div.rightbox .activites__row3{
+    div.rightbox .activites__row3 {
         display: flex;
         width: 100%;
-        min-height:60%;
+        min-height: 60%;
         padding-bottom: 20px;
     }
-    div.rightbox .activites__row4{
+
+    div.rightbox .activites__row4 {
         display: flex;
-        min-height:60%;
+        min-height: 60%;
         width: 100%;
     }
 
-    div.leftbox .activites__row4{
+    div.leftbox .activites__row4 {
         display: flex;
-        min-height:60%;
+        min-height: 60%;
         width: 100%;
     }
 
-    footer{
+    footer {
         width: 100%;
     }
+
     section.footer {
         display: flex;
         padding: 30px 45px;
@@ -1201,7 +968,7 @@ div.row-image{
     /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 768px */
 /**__________FILTRE_________**/
     header{
-        min-height:360px;
+        height: auto;
     }
     div.filtre {
         display: flex;
@@ -1296,7 +1063,7 @@ div.row-image{
     /****________Section Hebergement__________*/
 
 section.hebergement{
-    min-height: 230vh;
+    height: auto;
     display: flex;
     flex-direction: column-reverse;
 }
@@ -1389,7 +1156,6 @@ div.imageDetails {
     right: 0;
     padding: 14px 14px;
     border-radius: 0px 25px 25px 0px ;
-
     line-height:23px;
 }
 
@@ -1410,7 +1176,7 @@ ul.listRight{
     text-transform: capitalize  ;
 }
 section.activites{
-    min-height: 140vh;
+    height: auto;
     margin: 3px 0
 }
 div.activites__container{
@@ -1475,7 +1241,7 @@ section.footer{
     /* règles CSS à appliquer lorsque la largeur de l'écran est superieur ou égale à 924px */
     /**__________FILTRE_________**/
     header {
-        min-height: 360px;
+        height: au;
     }
 
     div.filtre {
@@ -1572,7 +1338,7 @@ section.footer{
     /****________Section Hebergement__________*/
 
     section.hebergement {
-        min-height: 110vh;
+        height: auto;
         display: flex;
         justify-content: space-evenly;
         flex-wrap: nowrap;
@@ -1749,23 +1515,40 @@ section.footer{
 
 
     section.activites {
-        min-height: 140vh;
+        /*min-height: 150vh;*/
+        height: auto;
         margin: 3px 0
     }
 
-    div.activites__container {
+div.activites__container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+    div.leftbox {
+        min-height: 570px;
         display: flex;
         flex-wrap: nowrap;
+        gap: 10px;
+        min-width: 50%;
+        justify-content: space-around;
+        padding: 25px;
     }
-
-    div.leftbox {
-        height: 420px;
+    div.rightbox{
+        min-height: 570px;
         display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        min-width: 20%;
-        padding: 20px;
-        background-color: #0065FC;
+        flex-wrap: nowrap;
+        gap: 10px;
+        justify-content: space-around;
+        min-width: 50%;
+        padding: 25px;
+    }
+    div.activites__row1 {
+        justify-content: space-evenly;
+        min-width: 50%;
+        min-height:400px ;
     }
 
     .activites-image {
@@ -1773,23 +1556,36 @@ section.footer{
         background-position: center;
         background-repeat: no-repeat;
         flex: 1;
-        min-width: 42px;
-        max-height: 100%;
+        min-width: 40px;
+        min-height: 200px;
         position: relative;
         border-radius: 20px 20px 20px 20px;
     }
-
-    div.rightbox {
-        height: 420px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
+    .activites-image .details {
+        position: absolute;
+        bottom: 0;
+        border-radius: 0px 0px 15px 15px;
+        background-color: #F2F2F2;
+        width: 100%;
+        font-size: 13px;
+        min-height:58px;
+        padding: 0 15px;
+        line-height: 16px;
+        text-transform: capitalize;
     }
-
     div.activites__row2 {
         min-height: 400px;
+        min-width: 48%;
     }
 
+    section.footer {
+        display: flex;
+        padding: 30px 45px;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    
 
 }
 
