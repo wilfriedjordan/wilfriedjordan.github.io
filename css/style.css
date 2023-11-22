@@ -864,7 +864,7 @@ div.row-image{
     header {
         margin: 30px;
         display: flex;
-        min-height: 110vh;
+        min-height: 130vh;
         justify-content: center;
         flex-direction: column;
     }
@@ -1094,7 +1094,7 @@ div.row-image{
         text-transform: capitalize  ;
     }
     section.activites{
-        min-height: 260vh;
+        min-height: 280vh;
         margin: 3px 0;
     }
     div.activites__container{
