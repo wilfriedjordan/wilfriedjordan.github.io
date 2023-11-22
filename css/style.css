@@ -915,15 +915,26 @@ div.row-image{
         background-color: #F2F2F2;
         top: 46.2px;
     }
-        .searchInput {
-            padding: 11px;
-            border: 1px solid #ccc;
-            outline: none;
-            font-weight: 1000;
-            color: black;
-            width: 180px;
-            font-size: 18px;
-        }
+    .searchInput {
+        padding: 11px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-weight: 1000;
+        color: black;
+        width: 180px;
+        font-size: 15px;
+    }
+    i#localisation {
+        padding: 11px;
+        padding-bottom: 13px;
+        background-color: #F2F2F2;
+        border: 1px solid #ccc;
+        border-radius: 10px 0 0 10px;
+        outline: none;
+        position: relative;
+        left: 5px;
+        border-right: none;
+    }
 
     /**_______FILTRE_______*/
 
