@@ -599,7 +599,6 @@ section.footer h2.footer_title{
         
         display: flex;
         height: auto;
-        justify-content: center;
         flex-direction: column;
     }
 
