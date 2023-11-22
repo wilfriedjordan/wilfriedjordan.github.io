@@ -862,7 +862,7 @@ div.row-image{
     header {
         margin: 30px;
         display: flex;
-        min-height: 125vh;
+        min-height: 120vh;
         justify-content: center;
         flex-direction: column;
     }
@@ -922,7 +922,7 @@ div.row-image{
         outline: none;
         font-weight: 1000;
         color: black;
-        width: 180px;
+        width: 160px;
         font-size: 15px;
     }
     i#localisation {
