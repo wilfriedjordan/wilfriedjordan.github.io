@@ -961,12 +961,12 @@ div.row-image{
         bottom: 2474px;
     }
     div.btn-filtre p.icons {
-        right: 8px;
+        right: 12px;
     }
 
 
     div.btn-filtre p.icons2 {
-        right: 11px;
+        right: 8px;
     }
 
     div#btn-filtre5 {
@@ -977,6 +977,10 @@ div.row-image{
         justify-content: space-around;
         border: 1.5px groove rgb(236, 229, 229);
         border-radius: 50px;
+    }
+    div#btn-filtre3,
+    div#btn-filtre1{
+        width: 190px;
     }
 
     .btn-filtre button {
