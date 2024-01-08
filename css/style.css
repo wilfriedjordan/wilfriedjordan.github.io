@@ -26,7 +26,7 @@ a{
 /**____________Header ___________**/
 
 header{
-    margin: 70px 50px;
+    margin: 5px 50px 70px ;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -164,6 +164,9 @@ div.filtre{
     text-align: center;
     gap: 35px;
 }
+div.filtre button{
+    cursor: pointer;
+}
 div.btn-filtre{
     display: flex;
     align-items: center;
@@ -174,6 +177,7 @@ div.btn-filtre{
     border: 1.5px groove rgb(236, 229, 229);
     border-radius: 50px;
     transition: transform 1s ease-in ;
+    cursor: pointer;
 }
 div.filtre h4{
     font-size: 20px;
