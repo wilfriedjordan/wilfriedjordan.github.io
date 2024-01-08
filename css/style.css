@@ -879,7 +879,7 @@ section.footer h2.footer_title{
     section.activites {
         /*min-height: 280vh;*/
         height: auto;
-        margin-bottom:30vh;
+        margin-bottom:15vh;
     }
 
     div.activites__container {
